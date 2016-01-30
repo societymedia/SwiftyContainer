@@ -6,7 +6,7 @@
   s.requires_arc = true
 
   # 2
-  s.version = “0.1.1”
+  s.version = "0.1.1"
 
   # 3
   s.license = "MIT"
@@ -24,8 +24,8 @@
   s.source = { :git => "https://github.com/societymedia/SwiftyContainer.git", :tag => s.version}
 
   # 7
-  s.dependency  'Quick', '~> 0.8.0'
-  s.dependency 'Nimble', ’~> 3.1.0’
+  s.dependency  'Quick', "~> 0.8.0"
+  s.dependency 'Nimble', "3.1.0"
 
   # 8
   s.source_files = "SwiftyContainer/**/*.{swift}"
