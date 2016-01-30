@@ -51,10 +51,8 @@ class SwiftyContainerSpec: QuickSpec {
             context("Resolves") {
                 it("TestClassA") {
 
-                    let a = TestClassA()
                     SwiftyContainer.bind(TestClassA)
-                    var instance = SwiftyContainer.resolve(TestClassA)
-
+                    let instance = SwiftyContainer.resolve(TestClassA)
 
                     expect(instance).toNot(beNil())
                 }
@@ -62,7 +60,7 @@ class SwiftyContainerSpec: QuickSpec {
 
                     SwiftyContainer.bind(TestClassA.self, withScope: SwiftyContainerScope.Singleton)
 
-                    var instance = SwiftyContainer.resolve(TestClassA)
+                    let instance = SwiftyContainer.resolve(TestClassA)
                     expect(instance).toNot(beNil())
                 }
 
@@ -70,7 +68,7 @@ class SwiftyContainerSpec: QuickSpec {
 
                     SwiftyContainer.bind(TestClassA.self, withScope: SwiftyContainerScope.Transient)
 
-                    var instance = SwiftyContainer.resolve(TestClassA)
+                    let instance = SwiftyContainer.resolve(TestClassA)
                     expect(instance).toNot(beNil())
                 }
             }
