@@ -31,7 +31,7 @@ class ViewController2: UIViewController {
 
         awesomeService = SwiftyContainer.resolve(AwesomeService.self)
         let val = self.awesomeService!.value
-        print(val)
+        print(val, terminator: "")
     }
 
 
@@ -56,7 +56,7 @@ class ViewController: UIViewController {
 
         awesomeService = SwiftyContainer.resolve(AwesomeService.self)
         let val = self.awesomeService!.value
-        print(val)
+        print(val, terminator: "")
 
     }
 
