@@ -1,5 +1,4 @@
   Pod::Spec.new do |s|
-  s.platform = :ios
   s.ios.deployment_target = "9.2"
   s.name = "SwiftyContainer"
   s.summary = "A simple Dependency Container written in Swift."
@@ -19,15 +18,14 @@
   # 5 - Replace this URL with your own Github page's URL (from the address bar)
   s.homepage = "https://github.com/societymedia/SwiftyContainer"
 
-
-  # 6 - Replace this URL with your own Git URL from "Quick Setup"
   s.source = { :git => "https://github.com/societymedia/SwiftyContainer.git", :tag => s.version}
 
-  # 7
-  s.dependency  'Quick', '~> 0.8.0'
-  s.dependency 'Nimble', '~> 3.1.0'
-
-  # 8
-  s.source_files = "SwiftyContainer/**/*.{swift}"
+  s.framework = "UIKit"
+  # s.dependency 'Nimble', '~> 3.1'
+    s.dependency 'Quick',  '~> 0.8.0'
+    s.source_files = "SwiftyContainer/**/*.{swift}"
+            
+    # s.resources = "SwiftyContainer/**/*.{png,jpeg,jpg,storyboard,xib}"
+  
 
 end
