@@ -7,6 +7,23 @@ class NotSwiftable {
 
 }
 
+
+
+public class TestClassA: BeSwifty {
+    
+    public var item: String = "name"
+    
+    public func yo() {
+        
+    }
+}
+
+public class TestClassB: BeSwifty { }
+
+public class TestClassC: BeSwifty { }
+
+public class TestClassD: BeSwifty { }
+
 class SwiftyContainerSpec: QuickSpec {
     override func spec() {
 

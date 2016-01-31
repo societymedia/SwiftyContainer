@@ -4,6 +4,7 @@
 //
 
 import Foundation
+
 public class BeSwifty: Swiftable {
     var title: String?
     var pagerank: String?

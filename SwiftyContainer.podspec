@@ -18,11 +18,15 @@
   # 5 - Replace this URL with your own Github page's URL (from the address bar)
   s.homepage = "https://github.com/societymedia/SwiftyContainer"
 
-
-  # 6 - Replace this URL with your own Git URL from "Quick Setup"
   s.source = { :git => "https://github.com/societymedia/SwiftyContainer.git", :tag => s.version}
 
-  # 8
-  s.source_files = "SwiftyContainer/*.swift"
+  s.framework = "XCTest"
+  s.framework = "UIKit"
+  # s.dependency 'Nimble', '~> 3.1'
+    s.dependency 'Quick',  '~> 0.8.0'
+    s.source_files = "SwiftyContainer/**/*.{swift}"
+            
+    # s.resources = "SwiftyContainer/**/*.{png,jpeg,jpg,storyboard,xib}"
+  
 
 end
