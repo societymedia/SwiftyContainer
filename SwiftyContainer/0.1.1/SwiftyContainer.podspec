@@ -20,6 +20,7 @@
 
   s.source = { :git => "https://github.com/societymedia/SwiftyContainer.git", :tag => s.version}
 
+  s.framework = "XCTest"
   s.framework = "UIKit"
   # s.dependency 'Nimble', '~> 3.1'
     s.dependency 'Quick',  '~> 0.8.0'
